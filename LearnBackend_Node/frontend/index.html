@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .truncate-text {
+        max-width: 150px; /* Adjust the max-width as needed */
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    </style>
+    <title>Bootstrap Table Text Truncate</title>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Item 1</td>
+            <td class="truncate-text">
+              This is a long description that will be truncated using custom
+              CSS. This is a long description that will be truncated using
+              custom CSS.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Item 2</td>
+            <td class="truncate-text">Short description.</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Item 3</td>
+            <td class="truncate-text">
+              Another long description that will be truncated using custom CSS.
+              Another long description that will be truncated using custom CSS.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
